@@ -1,0 +1,30 @@
+.container {
+  background-color: #ffc0cb;
+}
+
+[class*="col-"] {
+  border: 1px solid #000;
+  height: 200px;
+  text-align: center;
+  position: relative;
+}
+
+.container:last-child .col-6 {
+  border: 1px solid #000;
+  padding: 5px;
+}
+
+.container .col-6 .col-2,
+.container .col-6 .col-8,
+.container .col-6 .col-6 {
+  background-color: #f07f80;
+  border-color: #FFF;
+  height: 100%;
+}
+
+span {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
